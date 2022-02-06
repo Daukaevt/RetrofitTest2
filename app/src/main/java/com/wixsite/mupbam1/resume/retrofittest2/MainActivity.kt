@@ -1,5 +1,9 @@
 package com.wixsite.mupbam1.resume.retrofittest2
 
+
+//https://www.youtube.com/watch?v=t6Sql3WMAnk
+//https://johncodeos.com/how-to-parse-json-with-retrofit-converters-using-kotlin/
+
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
@@ -66,64 +70,6 @@ class MainActivity : AppCompatActivity() {
 
         }
 
-
-
-
-
-
-
-
-        /*
-        // Create Service
-        val service = retrofit.create(RetrofitInstanse::class.java)
-        CoroutineScope(Dispatchers.IO).launch {
-
-            // Do the GET request and get response
-            val response = service.getEmployee()
-            val items = response.body()
-
-            Log.d("MyLog", "link-$response")
-
-
-            withContext(Dispatchers.Main) {
-                if (response.isSuccessful) {
-
-                    val items = response.body()
-                    if (items != null) {
-                        for (i in 0 until items.image.count()) {
-                            // ID
-                            val id = items
-                            Log.d("MyLog", id.toString())
-
-                            /*
-                            // Employee Name
-                            val employeeName = items[i].employeeName ?: "N/A"
-                            Log.d("Employee Name: ", employeeName)
-
-                            // Employee Salary
-                            val employeeSalary = items[i].employeeSalary ?: "N/A"
-                            Log.d("Employee Salary: ", employeeSalary)
-
-                            // Employee Age
-                            val employeeAge = items[i].employeeAge ?: "N/A"
-                            Log.d("Employee Age: ", employeeAge)
-
-                             */
-
-                        }
-                    }
-
-                } else {
-
-                    Log.e("MyLog", response.code().toString())
-
-                }
-            }
-
-
-        }
-
-         */
     }
 
 
